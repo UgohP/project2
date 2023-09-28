@@ -1,2 +1,1 @@
-# project2
-Project 2
+My personal python and django project
