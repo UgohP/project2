@@ -1,0 +1,16 @@
+<div>
+    <center>
+        {% for message in messages %}
+        <p>{{message}}</p>
+        {% endfor %}
+    </center>
+    <div>
+        <p>Are you sure you want to delete "{{product}}"?</p>
+        <form method="post">
+            {% csrf_token%}
+            <input type="submit" value="Yes">
+        </form>
+        <a href="{% url 'my_blog' %}"><button>No</button></a>
+
+    </div>
+</div>
